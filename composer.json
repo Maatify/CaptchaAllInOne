@@ -1,0 +1,61 @@
+{  "name": "maatify/captcha-all-in-one",
+  "description": "Unofficial Cloudflare Turnstile, Google Captcha V3, Google Captcha V2 And HCaptcha for PHP it's library for maatify.dev handler, known by our team",
+  "version": "2.0.0011",
+  "type": "library",
+  "keywords": [
+    "PHP",
+    "Turnstile",
+    "cloudflare",
+    "Google",
+    "Captcha",
+    "HCaptcha",
+    "Handler"
+  ],
+  "homepage": "https://github.com/Maatify/",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Mohamed Abdulalim",
+      "email": "mohamed@maatify.dev",
+      "homepage": "https://www.maatify.com/",
+      "role": "Backend Developer"
+    },
+    {
+      "name": "Ahmed Fawzy",
+      "email": "a.fawzy@maatify.dev",
+      "homepage": "https://www.maatify.com/",
+      "role": "Frontend Developer"
+    },
+    {
+      "name": "Ahmed Abdullah",
+      "email": "a.abdullah@maatify.dev",
+      "homepage": "https://www.maatify.com/",
+      "role": "Android Developer"
+    },
+    {
+      "name": "Elmokhtar Ahmed",
+      "email": "mokhtar@maatify.dev",
+      "homepage": "https://www.maatify.com/",
+      "role": "IOS Developer"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "8.0.0"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-curl": "*",
+    "maatify/logger": "^1.1",
+    "maatify/functions": "^1.2",
+    "maatify/cloudflare-turnstile": "^1.0",
+    "maatify/hcaptcha": "^1.0",
+    "maatify/google-recaptcha-v2": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maatify\\CaptchaV1\\": "captcha_v_one/"
+    }
+  }
+}
