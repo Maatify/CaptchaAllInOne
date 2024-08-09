@@ -1,6 +1,6 @@
 {  "name": "maatify/captcha-all-in-one",
   "description": "Unofficial Cloudflare Turnstile, Google Captcha V3, Google Captcha V2 And HCaptcha for PHP it's library for maatify.dev handler, known by our team",
-  "version": "1.0.0001",
+  "version": "1.0.0002",
   "type": "library",
   "keywords": [
     "PHP",
@@ -23,6 +23,12 @@
     {
       "name": "Ahmed Fawzy",
       "email": "a.fawzy@maatify.dev",
+      "homepage": "https://www.maatify.com/",
+      "role": "Frontend Developer"
+    },
+    {
+      "name": "Mohaned Saeed Sami",
+      "email": "mohaned.saeed@maatify.dev",
       "homepage": "https://www.maatify.com/",
       "role": "Frontend Developer"
     },

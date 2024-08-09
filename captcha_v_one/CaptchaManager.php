@@ -22,6 +22,7 @@ namespace Maatify\CaptchaV1;
 use Exception;
 use Maatify\GoogleRecaptchaV2\GoogleReCaptchaV2Validation;
 use Maatify\HCaptcha\HCaptchaPublisherProValidation;
+use Maatify\Json\Json;
 use Maatify\Turnstile\TurnstileValidation;
 
 class CaptchaManager
@@ -154,22 +155,14 @@ class CaptchaManager
     {
         $is_success = $this->isSuccess();
         if (!$is_success) {
-            switch ($this->current_captcha_type){
-                case 'turnstile':
-                    $this->turnstile->jsonErrors();
-                    break;
-                case 'google_v3':
-                    $this->googleV3->jsonErrors();
-                    break;
-                case 'google_v2':
-                    $this->googleV2->jsonErrors();
-                    break;
-                case 'hcaptcha':
-                    $this->hCaptcha->jsonErrors();
-                    break;
-                default;
-                    throw new Exception("Unknown CAPTCHA type");
-            }
+            $response = match ($this->current_captcha_type) {
+                'turnstile' => $this->turnstile->getResponse(),
+                'google_v3' => $this->googleV3->getResponse(),
+                'google_v2' => $this->googleV2->getResponse(),
+                'hcaptcha' => $this->hCaptcha->getResponse(),
+                default => throw new Exception("Unknown CAPTCHA type"),
+            };
+            Json::captchaInvalid($response, __LINE__);
         }
 
     }
