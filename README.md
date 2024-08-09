@@ -76,11 +76,35 @@ try {
     echo $e->getMessage();
     
 }
-
-
 ```
 
-### examples
+#### jsonErrors();
+>##### Error Example
+>
+>   Header 400
+>
+>   Body:
+>
+> - on validation error
+>
+>```json
+>   {
+>        "success": false,
+>        "response": 40002,
+>        "var": "captcha",
+>        "description": {
+>            "success": false,
+>            "error-codes": [
+>                "missing-input-response"
+>            ],
+>            "messages": [],
+>            "next_captcha": "turnstile"
+>        },
+>        "more_info": "Invalid Validation",
+>        "error_details": "test:159"
+>    }
+>```
+
 
 ### Create From in HTML Code
 

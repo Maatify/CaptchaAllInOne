@@ -155,13 +155,7 @@ class CaptchaManager
     {
         $is_success = $this->isSuccess();
         if (!$is_success) {
-            $response = match ($this->current_captcha_type) {
-                'turnstile' => $this->turnstile->getResponse(),
-                'google_v3' => $this->googleV3->getResponse(),
-                'google_v2' => $this->googleV2->getResponse(),
-                'hcaptcha' => $this->hCaptcha->getResponse(),
-                default => throw new Exception("Unknown CAPTCHA type"),
-            };
+            $response = $this->getResponse();
             Json::captchaInvalid($response, __LINE__);
         }
 
