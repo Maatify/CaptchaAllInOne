@@ -156,7 +156,7 @@ class CaptchaManager
         $is_success = $this->isSuccess();
         if (!$is_success) {
             $response = $this->getResponse();
-            Json::captchaInvalid($response, __LINE__);
+            Json::captchaInvalid($response, $response['error-codes'][0]?? '',  __LINE__);
         }
 
     }

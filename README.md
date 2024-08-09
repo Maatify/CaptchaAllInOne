@@ -100,7 +100,7 @@ try {
 >            "messages": [],
 >            "next_captcha": "turnstile"
 >        },
->        "more_info": "Invalid Validation",
+>        "more_info": "missing-input-response",
 >        "error_details": "test:159"
 >    }
 >```
