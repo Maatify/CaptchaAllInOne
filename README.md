@@ -10,7 +10,7 @@
 # Installation
 
 ```shell
-composer composer require maatify/captcha-all-in-one
+composer require maatify/captcha-all-in-one
 ```
 
 # Env File Should Contain
