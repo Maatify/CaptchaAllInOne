@@ -210,6 +210,6 @@ class CaptchaManager
             'hcaptcha'  => $_ENV['HCAPTCHA_SITE_KEY'],
         ];
 
-        return $siteKeys[$type];
+        return $siteKeys[$type] ?? '';
     }
 }
