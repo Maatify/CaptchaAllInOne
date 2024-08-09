@@ -1,11 +1,11 @@
-[![Current version](https://img.shields.io/packagist/v/maatify/maatify/captcha-all-in-one)][pkg]
-[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/maatify/captcha-all-in-one)][pkg]
-[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/maatify/captcha-all-in-one)][pkg-stats]
-[![Total Downloads](https://img.shields.io/packagist/dt/maatify/maatify/captcha-all-in-one)][pkg-stats]
-[![Stars](https://img.shields.io/packagist/stars/maatify/maatify/captcha-all-in-one)](https://github.com/maatify/CaptchaAllInOne/stargazers)
+[![Current version](https://img.shields.io/packagist/v/maatify/captcha-all-in-one)][pkg]
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/captcha-all-in-one)][pkg]
+[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/captcha-all-in-one)][pkg-stats]
+[![Total Downloads](https://img.shields.io/packagist/dt/maatify/captcha-all-in-one)][pkg-stats]
+[![Stars](https://img.shields.io/packagist/stars/maatify/captcha-all-in-one)](https://github.com/maatify/CaptchaAllInOne/stargazers)
 
-[pkg]: <https://packagist.org/packages/maatify/maatify/captcha-all-in-one>
-[pkg-stats]: <https://packagist.org/packages/maatify/maatify/captcha-all-in-one/stats>
+[pkg]: <https://packagist.org/packages/maatify/captcha-all-in-one>
+[pkg-stats]: <https://packagist.org/packages/maatify/captcha-all-in-one/stats>
 
 # Installation
 
